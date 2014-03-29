@@ -26,4 +26,13 @@ class Rolodex
 			end
 		end
 	end
+
+	def self.modify_contact(id, name, email)
+		@contacts.each do |contact|
+			if contact.id == id
+				contact.name = name
+				contact.email = email
+			end
+		end
+	end
 end
