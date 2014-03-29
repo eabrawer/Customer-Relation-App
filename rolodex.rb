@@ -1,3 +1,5 @@
+require_relative 'contact'
+
 class Rolodex
 	@contacts = []
 	@id = 1000
@@ -36,3 +38,6 @@ class Rolodex
 		end
 	end
 end
+
+# Don't always need attr accessor. Rolodex just wraps and represents the array
+# We don't want to expose the rolodex to outside manipulation 
