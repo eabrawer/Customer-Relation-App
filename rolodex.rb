@@ -15,4 +15,15 @@ class Rolodex
 		end
 	end
 
+	def self.find_contact(id)
+		return nil if @contacts.empty?
+
+		@contacts.each do |contact|
+			if contact.id == id
+				return contact
+			else
+				return nil
+			end
+		end
+	end
 end
